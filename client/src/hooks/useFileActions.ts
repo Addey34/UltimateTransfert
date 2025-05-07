@@ -15,7 +15,6 @@ export const useFileActions = () => {
   const { isAuthenticated } = useAuth();
   const { files, setFiles } = useFile();
 
-  // Fonction pour uploader un fichier
   const uploadFile = useCallback(
     async (file: File) => {
       if (!isAuthenticated) {
@@ -54,7 +53,6 @@ export const useFileActions = () => {
     [isAuthenticated, setFiles]
   );
 
-  // Suppression d'un fichier
   const removeFile = async (fileId: string) => {
     if (!fileId) return;
     setIsLoading(true);
@@ -74,7 +72,6 @@ export const useFileActions = () => {
     }
   };
 
-  // Gestion de la copie du lien
   const handleCopyLink = async (file: IFile) => {
     try {
       if (file.shareLink) {

@@ -2,8 +2,8 @@ import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import { IUserMongoose } from '../types/mongoose.types';
 
-const CLIENT_URL = process.env.VITE_CLIENT_URL || 'http://localhost:5173';
-const JWT_SECRET = process.env.JWT_SECRET || 'default-secret';
+const CLIENT_URL = process.env.VITE_CLIENT_URL as string;
+const JWT_SECRET = process.env.JWT_SECRET as string;
 
 export const googleCallback = (req: Request, res: Response) => {
   try {

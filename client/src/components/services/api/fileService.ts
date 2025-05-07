@@ -2,7 +2,6 @@ import { IFile } from '@/types/app.types';
 import { AxiosError } from 'axios';
 import api from '../../../api/axios';
 
-// Fonction pour uploader un fichier
 export const uploadFile = async (
   file: File,
   onProgress?: (progress: number) => void
@@ -35,7 +34,6 @@ export const uploadFile = async (
   }
 };
 
-// Fonction pour supprimer un fichier
 export const deleteFile = async (fileId: string): Promise<void> => {
   if (!fileId) {
     throw new Error('File ID is required');
@@ -49,12 +47,10 @@ export const deleteFile = async (fileId: string): Promise<void> => {
   }
 };
 
-// Fonction pour obtenir l'URL de téléchargement d'un fichier
 export const getFileUrl = (shareLink: string): string => {
   return `${import.meta.env.VITE_SERVER_URL}/files/download/${shareLink}`;
 };
 
-// Fonction pour récupérer les fichiers de l'utilisateur
 export const fetchUserFiles = async (): Promise<IFile[]> => {
   const token = localStorage.getItem('token');
   if (!token) {
