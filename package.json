@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "concurrently \"pnpm:start-server\" \"pnpm:start-client\"",
-    "start-server": "cd server && pnpm run dev",
-    "start-client": "cd client && pnpm run dev",
-    "build": "cd server && pnpm run build && cd ../client && pnpm run build"
+    "dev": "concurrently \"cd server && pnpm dev\" \"cd client && pnpm dev\"",
+    "build": "concurrently \"cd server && pnpm build\" \"cd client && pnpm build\"",
+    "start": "cd server && pnpm start",
+    "preview": "cd client && pnpm preview"
   },
   "devDependencies": {
     "concurrently": "^8.2.1"
