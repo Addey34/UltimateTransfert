@@ -50,22 +50,22 @@ L'architecture suit une approche **full stack** avec **React** pour le frontend 
 
 ### Frontend
 
--- **React** pour l'interface utilisateur dynamique.
--- **TypeScript** pour une gestion stricte des types.
--- **Axios** pour la gestion des requêtes HTTP.
--- **TailwindCSS** pour la mise en forme.
--- **Vite** comme bundler pour un développement rapide.
--- **React Router** pour la gestion de la navigation.
+- **React** pour l'interface utilisateur dynamique.
+- **TypeScript** pour une gestion stricte des types.
+- **Axios** pour la gestion des requêtes HTTP.
+- **TailwindCSS** pour la mise en forme.
+- **Vite** comme bundler pour un développement rapide.
+- **React Router** pour la gestion de la navigation.
 
 ### Backend
 
--- **Express** pour créer une API REST.
--- **MongoDB** pour le stockage des fichiers et des utilisateurs.
--- **GridFS** pour le stockage des fichiers volumineux.
--- **JWT** (JSON Web Token) pour l'authentification sécurisée des utilisateurs.
--- **Passport.js** avec Google OAuth pour l'authentification via Google.
--- **Multer** pour gérer l'upload des fichiers.
--- **dotenv** pour la gestion des variables d'environnement.
+- **Express** pour créer une API REST.
+- **MongoDB** pour le stockage des fichiers et des utilisateurs.
+- **GridFS** pour le stockage des fichiers volumineux.
+- **JWT** (JSON Web Token) pour l'authentification sécurisée des utilisateurs.
+- **Passport.js** avec Google OAuth pour l'authentification via Google.
+- **Multer** pour gérer l'upload des fichiers.
+- **dotenv** pour la gestion des variables d'environnement.
 
 ### Prérequis
 
@@ -119,15 +119,15 @@ Cela va démarrer le serveur backend sur [Backend](http://localhost:3000) et le 
 
 #### Authentification
 
--- POST /api/auth/google/callback : Callback de Google pour récupérer le token JWT.
--- GET /api/auth/user : Récupérer les informations de l'utilisateur connecté.
+- POST /api/auth/google/callback : Callback de Google pour récupérer le token JWT.
+- GET /api/auth/user : Récupérer les informations de l'utilisateur connecté.
 
 ### Fichiers
 
--- POST /api/files/upload : Téléverser un fichier (authentification requise).
--- GET /api/files/user : Récupérer tous les fichiers de l'utilisateur connecté.
--- GET /api/files/download/:shareLink : Télécharger un fichier via son lien de partage.
--- DELETE /api/files/:fileId : Supprimer un fichier.
+- POST /api/files/upload : Téléverser un fichier (authentification requise).
+- GET /api/files/user : Récupérer tous les fichiers de l'utilisateur connecté.
+- GET /api/files/download/:shareLink : Télécharger un fichier via son lien de partage.
+- DELETE /api/files/:fileId : Supprimer un fichier.
 
 #### Sécurisation
 
