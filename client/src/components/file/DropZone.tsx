@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
-import { useAuth } from '../hooks/useAuth';
-import { useFileActions } from '../hooks/useFileActions';
+import { useAuth } from '../../hooks/useAuth';
+import { useFileActions } from '../../hooks/useFileActions';
 
 const DropZone: React.FC = () => {
   const { uploadFile } = useFileActions();

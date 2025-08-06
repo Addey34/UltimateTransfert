@@ -1,7 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import AuthCallback from './components/auth/AuthCallback';
-import DropZone from './components/DropZone';
-import FileList from './components/FileList';
+import DropZone from './components/file/DropZone';
+import FileList from './components/file/FileList';
 import Header from './components/ui/Header';
 import { AuthProvider } from './context/AuthContext';
 import { FileProvider } from './context/FileContext';

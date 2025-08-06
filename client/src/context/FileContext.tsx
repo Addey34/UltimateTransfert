@@ -1,7 +1,7 @@
 import { IFile } from '@/types/app.types';
 import { createContext, ReactNode, useCallback, useState } from 'react';
-import { fetchUserFiles } from '../components/services/api/fileService';
 import { useAuth } from '../hooks/useAuth';
+import { fetchUserFiles } from '../services/api/fileService';
 
 interface FileContextType {
   files: IFile[];

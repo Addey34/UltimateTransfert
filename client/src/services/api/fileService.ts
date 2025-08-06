@@ -1,6 +1,6 @@
 import { IFile } from '@/types/app.types';
 import { AxiosError } from 'axios';
-import api from '../../../api/axios';
+import api from './axios';
 
 export const uploadFile = async (
   file: File,

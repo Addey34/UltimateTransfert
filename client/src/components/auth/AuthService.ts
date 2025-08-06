@@ -1,8 +1,10 @@
 import { IUser } from '@/types/app.types';
-import api from '../../../api/axios';
+import api from '../../services/api/axios';
 
 export class AuthService {
   private static instance: AuthService;
+
+  private constructor() {}
 
   static getInstance(): AuthService {
     if (!this.instance) {

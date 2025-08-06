@@ -19,6 +19,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "include": ["src", "vite.config.ts", "src/components/services/api"],
+  "include": ["src", "vite.config.ts", "src/services/api"],
   "exclude": ["node_modules"]
 }

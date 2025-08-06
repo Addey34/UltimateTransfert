@@ -2,8 +2,8 @@ import { useFile } from '@/hooks/useFile';
 import { IFile } from '@/types/app.types';
 import { Check, File, RefreshCw, X } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
-import { useAuth } from '../hooks/useAuth';
-import { useFileActions } from '../hooks/useFileActions';
+import { useAuth } from '../../hooks/useAuth';
+import { useFileActions } from '../../hooks/useFileActions';
 
 const FileList: React.FC = () => {
   const { files, fetchFiles } = useFile();

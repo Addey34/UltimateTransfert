@@ -1,11 +1,11 @@
 import { FileError, IFile } from '@/types/app.types';
 import { useCallback, useState } from 'react';
+import { useAuth } from '../hooks/useAuth';
 import {
   deleteFile as apiDeleteFile,
   uploadFile as apiUploadFile,
   getFileUrl,
-} from '../components/services/api/fileService';
-import { useAuth } from '../hooks/useAuth';
+} from '../services/api/fileService';
 import { useFile } from './useFile';
 
 export const useFileActions = () => {
